@@ -1,0 +1,2 @@
+marked 18.1.1 https://www.npmjs.com/package/marked
+dompurify 3.4.17 https://www.npmjs.com/package/dompurify

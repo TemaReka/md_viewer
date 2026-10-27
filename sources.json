@@ -1,0 +1,7 @@
+{
+  "directories": [
+    "../Trade-Offs in Data Systems Architecture/questions",
+    "../Defining Nonfunctional Requirements/questions"
+  ],
+  "exclude": ["AGENTS.md", "catalog.md", "qst.md", "README.md", "*-draft.md"]
+}

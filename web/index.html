@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Личная библиотека заметок по Designing Data-Intensive Applications">
+  <title>На полях · DDIA</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232e5547'/%3E%3Ctext x='12' y='46' font-size='42' fill='white'%3E≋%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vendor/marked.js"></script>
+  <script defer src="vendor/purify.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon">≋</span> На полях<span class="brand-sub">/ DDIA</span></a><button id="folders-toggle" class="folder-button" aria-controls="library" aria-expanded="true">☷ <span>Папки</span></button></header>
+  <main class="layout">
+    <aside id="library" class="library">
+      <div class="eyebrow">ВАША БИБЛИОТЕКА</div>
+      <h2>Немного каждый день.</h2>
+      <p class="muted intro">Одна заметка — одна мысль,<br>к которой стоит вернуться.</p>
+      <div class="section-label">ПАПКИ <button id="select-all" class="text-button">Выбрать все</button></div>
+      <div id="folders"></div>
+      <label class="search-label" for="search">Поиск по заметкам</label>
+      <input id="search" type="search" placeholder="Например, Parquet" autocomplete="off">
+      <div id="collection-count" class="muted collection-count"></div>
+      <p class="sidebar-note">Из ваших Markdown-файлов.<br><span id="updated"></span></p>
+    </aside>
+    <section class="reading" aria-label="Чтение заметок">
+      <div class="reading-top"><span class="eyebrow">DESIGNING DATA-INTENSIVE APPLICATIONS</span><span id="position" class="muted" aria-live="polite"></span></div>
+      <div id="card-meta" class="card-meta"></div>
+      <article id="card" class="markdown" aria-busy="true"><p>Открываем библиотеку…</p></article>
+      <nav id="navigation" class="navigation" aria-label="Навигация по карточкам" hidden>
+        <button id="prev" class="nav-button">← <span>Назад</span></button>
+        <button id="random" class="dice" aria-label="Случайная карточка" title="Случайная карточка">⚄</button>
+        <button id="next" class="nav-button"><span>Вперёд</span> →</button>
+      </nav>
+      <p class="footer-note">Читать. Понимать. Возвращаться.</p>
+    </section>
+  </main>
+  <noscript>Для просмотра карточек включите JavaScript в браузере.</noscript>
+</body>
+</html>

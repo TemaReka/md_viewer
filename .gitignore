@@ -1,0 +1,5 @@
+dist/
+.publish/
+__pycache__/
+*.tar.gz
+.cards-build-*/
